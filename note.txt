@@ -1,0 +1,8 @@
+inserire grafici wandb!!!!!
+Inserire numero parametri
+Sistemare report e tabella parametri
+Creare figura -> draw.io
+
+Considerazioni report: snn va meglio, perche è stata fatta una regolazione specifica e studiata. noi senza aver fatto una regolazione
+specifica abbiamo raggiunto prestazioni simili (boh più o meno)
+guardare intervalli di confidenza per avere affidabilità risultati
