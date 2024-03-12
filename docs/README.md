@@ -41,7 +41,7 @@ DATA_ROOT_DIR is the base directory. Within DATA_ROOT_DIR, the 'pt_files' folder
 For preprocessing molecular data we applied log2 to gene expression values and  we filtered for coding genes following [GeneNames](https://www.genenames.org/download/statistics-and-files/). For ordering gene features into gene embeddings, we used the following categorization of gene families from [MSigDB](https://www.gsea-msigdb.org/gsea/msigdb/gene_families.jsp?ex=1) as presented in [MCAT](https://github.com/mahmoodlab/MCAT).
 
 ## Training-Validation Splits
-For evaluating the algorithm's performance, we randomly partitioned each dataset using 5-fold cross-validation. Splits for ovary cancer are found in the [splits/5foldcv](https://github.com) folder which contains **splits_{k}.csv** for k = 1 to 5. In each **splits_{k}.csv**, the first column corresponds to the TCGA Case IDs used for training, and the second column corresponds to the TCGA Case IDs used for validation. To create these train-val splits please refer to the [**generate_splits.py**](https://github.com) file and the [**generate_split**](https://github.com) function in [**utilities/utils.py**](https://github.com).
+For evaluating the algorithm's performance, we randomly partitioned each dataset using 5-fold cross-validation. Splits for ovary cancer are found in the [splits/5foldcv](https://github.com) folder which contains **splits_{k}.csv** for k = 1 to 5. In each **splits_{k}.csv**, the first column corresponds to the TCGA Case IDs used for training, and the second column corresponds to the TCGA Case IDs used for validation. To create these train-val splits please refer to the [**generate_splits.py**](https://github.com/alessiasaporita/MCAT-HViT/tree/main/utilities) file and the generate_split function in [**utilities/utils.py**](https://github.com/alessiasaporita/MCAT-HViT/tree/main/utilities).
 
 
 ## Running Experiments
@@ -49,7 +49,7 @@ To run experiments using the SNN, MCAT, MCAT-HViT and MCAT-ViT networks defined 
 ```shell
 CUDA_VISIBLE_DEVICES=<DEVICE ID> python main.py --which_splits <SPLIT FOLDER PATH> --split_dir <SPLITS FOR OVARY CANCER> --mode <WHICH MODALITY> --model_type <WHICH MODEL> 
 ```
-Commands for all experiments / models can be found in the [Commands.md](https://github.com) file.
+Commands for all experiments / models can be found in the [Commands.md](Commands.md) file.
 The --met option specifies the possibility to train the models with also methylation beta values. 
 
 
