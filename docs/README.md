@@ -17,7 +17,7 @@ MCAT-HViT: Multimodal Co-Attention Hierarchical Transformer for Survival Predict
 
 **Summary:** We develop a multimodal co-attention hierarchical transformer able to predict whether ovarian cancer patients will survive more than 42 months. The threshold has been set empirically to 42 months based on our data distribution. However it can be tailored according to one's specific requirements. The survival is predicted via: 1) formulating both WSIs and genomic inputs as embedding-like structures, 2) using co-attention mechanism that learns pairwise interactions between instance-level histology patches and genomic embeddings, 3) fusing modalities by processing the embeddings with a transformer encoder that applies multi-head self-attention to all input tokens, thus allowing cross-modality information transfer and 4) reducing the noise contained in histology patches by randomly set to zero the visual embedding with probability chosen to be 30%.
 
-<img src="architecture.jpg" width="1500px" align="center" /> our image
+<img src="architecture.jpg" width="1500px" align="center" /> architecture
 
 ### Pre-requisites:
 Please refer to our [Installation guide](INSTALLATION.md) for detailed instructions on how to get started.
